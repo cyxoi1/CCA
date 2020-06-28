@@ -47,6 +47,11 @@ describe('Complex Counter App', function () { //define suite title by passing a 
             expect(delBtn).toEqual(true);
         });
 
+        it('TC-008 Verify that "RESET" button is existing on the app page', () => {
+            const resetBtn = $('[class="btn-primary btn Ripple-parent reset"]').isDisplayed()
+            expect(resetBtn).toEqual(true);
+         });
+
     });
 
 });
