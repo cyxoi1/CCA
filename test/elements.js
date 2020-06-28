@@ -43,14 +43,22 @@ describe('Complex Counter App', function () { //define suite title by passing a 
         });
 
         it('TC-007 Verify that "DELETE" button is existing on the app page', () => {
-            const delBtn = $('[id="1"]').isDisplayed()
+            const delBtn = $('[id="1"]').isDisplayed();
             expect(delBtn).toEqual(true);
         });
 
         it('TC-008 Verify that "RESET" button is existing on the app page', () => {
-            const resetBtn = $('[class="btn-primary btn Ripple-parent reset"]').isDisplayed()
+            const resetBtn = $('[class="btn-primary btn Ripple-parent reset"]').isDisplayed();
             expect(resetBtn).toEqual(true);
          });
+
+        it('TC-009 Verify that "Edit Counter Title" label is existing on the app page', () => {
+            const editCounterLbl = $('//label[contains(text(),"Enter")]').isDisplayed();
+            expect(editCounterLbl).toEqual(true);
+        });
+
+
+
 
     });
 
