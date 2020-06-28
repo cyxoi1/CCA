@@ -57,6 +57,11 @@ describe('Complex Counter App', function () { //define suite title by passing a 
             expect(editCounterLbl).toEqual(true);
         });
 
+        it('TC-10 Verify that "Edit Counter Name Field" is existing on the page ', () => {
+            const editCountName = $('[name="edit"]').isDisplayed();
+            expect(editCountName).toEqual(true);
+        });
+
 
 
 
