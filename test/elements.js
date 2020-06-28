@@ -16,17 +16,17 @@ describe('Complex Counter App', function () { //define suite title by passing a 
 
     describe('Elements exist', function () {
 
-        it('TC-002 Header', function () {
+        it.skip('TC-002 Header', function () {
             const header = $('h1').isDisplayed();
             expect(header).toEqual(true);
         })
 
-        it('TC-003 Total Result', function () {
+        it.skip('TC-003 Total Result', function () {
             const header = $('h3.total-count').isDisplayed();
             expect(header).toEqual(true);
         })
 
-        it('TC-004 Counter Name', function () {
+        it.skip('TC-004 Counter Name', function () {
             const header = $$('h3')[1].isDisplayed();
             expect(header).toEqual(true);
         })
@@ -35,6 +35,16 @@ describe('Complex Counter App', function () { //define suite title by passing a 
         it('TC-005 Verify that  "Limit Field 1" is displayed on the app page ', function () {
            const lf1 = $('button[name="negative"]').isDisplayed();
            expect(lf1).toEqual(true);
+        });
+
+        it('TC-006 Verify that  "Limit Field 2" is displayed on the app page ', function () {
+            const lf1 = $('button[name="positive"]').isDisplayed();
+            expect(lf1).toEqual(true);
+        });
+
+        it('TC-007 Verify that "DELETE" button is existing on the app page', () => {
+            const delBtn = $('[id="1"]').isDisplayed()
+            expect(delBtn).toEqual(true);
         });
 
     });
