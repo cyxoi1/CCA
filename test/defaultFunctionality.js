@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 
 
-describe('Default counter functionality', function () {
+describe.skip('Default counter functionality', function () {
 
     describe('Calculation works', function () {
 

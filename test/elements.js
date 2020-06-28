@@ -30,6 +30,12 @@ describe('Complex Counter App', function () { //define suite title by passing a 
             const header = $$('h3')[1].isDisplayed();
             expect(header).toEqual(true);
         })
+////==========================================================================
+
+        it('TC-005 Verify that  "Limit Field 1" is displayed on the app page ', function () {
+           const lf1 = $('button[name="negative"]').isDisplayed();
+           expect(lf1).toEqual(true);
+        });
 
     });
 
