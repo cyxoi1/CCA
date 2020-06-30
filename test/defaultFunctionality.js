@@ -1,7 +1,7 @@
-import { assert } from 'chai';
+import { expect } from 'chai';
 
 
-describe.skip('Default counter functionality', function () {
+describe('Default counter functionality', function () {
 
     describe('Calculation works', function () {
 
