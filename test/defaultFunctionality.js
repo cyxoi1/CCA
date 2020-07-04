@@ -21,13 +21,13 @@ describe('Default counter functionality', function () {
 
     it('TC-042 LLF accept 1', function () {
         inputNumber('left', expectedDCF.inputMin);
-        const result = $(selectorCnt.error).isDisplayed();
+        const result = $(selectorCnt.errorMsg).isDisplayed();
         expect(result).toEqual(false);
     })
 
-    it('TC-0432 ULF accept 9', function () {
+    it('TC-043 ULF accept 9', function () {
         inputNumber('right', expectedDCF.inputMax);
-        const result = $(selectorCnt.error).isDisplayed();
+        const result = $(selectorCnt.errorMsg).isDisplayed();
         expect(result).toEqual(false);
     })
     /*
