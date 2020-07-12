@@ -17,5 +17,5 @@ function inputNumber (str, value) {
         browser.keys(value);
     }
 }
-
+//
 module.exports = inputNumber;
